@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Playfair Display", serif;
+
+  --color-primary: #C9A063;
+  --color-primary-container: #A6804D;
+  --color-background: #FFFDF5;
+  --color-surface: #FFFDF5;
+  --color-on-surface: #1A1A1A;
+  --color-on-surface-variant: #4A4A4A;
+  --color-outline: #8C8C8C;
+  --color-outline-variant: #E5E5E5;
+  --color-surface-container-low: #F9F7F0;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-error: #BA1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.glass-panel {
+  @apply bg-background/80 backdrop-blur-xl;
+}
+
+.medical-grid {
+  background-image: radial-gradient(#C9A063 0.5px, transparent 0.5px);
+  background-size: 32px 32px;
+}
+
+.mesh-overlay {
+  background-image: radial-gradient(circle at center, transparent 0%, transparent 1px, rgba(201, 160, 99, 0.2) 1px);
+  background-size: 20px 20px;
+}

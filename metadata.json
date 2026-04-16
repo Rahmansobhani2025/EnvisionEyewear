@@ -1,0 +1,7 @@
+{
+  "name": "Envision Eyewear",
+  "description": "AI-powered optical precision for finding the perfect frames with clinical accuracy.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
